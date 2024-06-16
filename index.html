@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weight Stairs</title>
+</head>
+<body>
+        <h1>Weight Stairs</h1>
+        <h4>What is it?</h4>
+        <p>This is a calorie calculator.  Specifically, for one's Basal Metabolic Rate(BMR) and/or Total Daily Energy Expenditure.  Not only these, but it also 
+            creates a 90 day calories intake plan.
+        </p>
+        <h4>Why should I know about my BMR?</h4>
+        <p>Everyone needs a certain amount of calories just to function.  From breathing, digestion, blood flow, brain functionality, etc.  
+            Without the minimum calories, a person can't function properly.  Everyone's BMR is different; it depends on age, weight, height, and gender.
+        </p>
+        <h4>Why should I know about my TDEE?</h4>
+        <p>It's important to know about BMR.  However, a person typically goes about their day doing certain things, especially exercising.  
+            So a person is bound to use up more calories.  And if a person uses up more calories, a well meaning weight loss plan can 
+            backfire.  Like BMR, everyone's TDEE is different.  Same factors as BMR, but with the addition of activity level.
+        </p>
+        <h4>How does all this help with my fitness goal?(Ex: Weight loss or weight gain)</h4>
+        <p>In order to lose weight, a person needs to go into a calorie deficit, and vice versa.  Therefore, in order to get a proper plan, 
+            a person needs to know their TDEE.  That way a person wouldn't have to take in too many calories, or accidently go into 
+            starvation mode, meaning that the metabolism slows down in order to "survive".
+        </p>
+        <p><b>Disclaimer:</b> This is not a 100% accurate plan.  This is more a general 
+            road map for the desired goal.  Please consult a doctor or a nutritionist
+            for an accurate plan.
+        </p>
+        <p id="copy">Practice Site By Ryan Park &copy;2024.</p>
+        <div id="calculatorContainer">
+            <div id="calculator">
+                <label for="">Gender:</label><br>
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="">Female</label>
+                <input type="radio" name="gender" id="female" value="female"><br>
+                <label for="">Height:</label><br>
+                <label for="">Feet:</label>
+                <input type="text" id='foot' placeholder="feet" required><br>
+                <label for="">Inches:</label>
+                <input type="text" id='inch' placeholder="inches" required><br>
+                <label for="">Weight:</label><br>
+                <input type="text" id='weight' placeholder="pounds" required><br>
+                <label for="">Age:</label><br>
+                <input type="text" id='age' placeholder="age" required><br>
+                <label for="">Activity:</label>
+                <select name="" id="activity">
+                    <option value="1">Basal Metabolic Rate(BMR)</option>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Lightly Active</option>
+                    <option value="1.55">Moderately Active</option>
+                    <option value="1.725">Very Active</option>
+                    <option value="1.9">Extra Active</option>
+                </select><br>
+                <label for="">Goal:</label>
+                <select name="" id="goal">
+                    <option value="a">Gain 2 lbs per week</option>
+                    <option value="b">Gain 1.5 lbs per week</option>
+                    <option value="c">Gain 1 lb per week</option>
+                    <option value="d">Gain .5 lbs per week</option>
+                    <option value="e">Maintain Weight</option>
+                    <option value="f">Lose .5 lbs per week</option>
+                    <option value="g">Lose 1 lb per week</option>
+                    <option value="h">Lose 1.5 lbs per week</option>
+                    <option value="i">Lose 2 lbs per week</option>
+                </select><br>
+                <button id="submit">Calculate</button>
+            </div>
+            <div id="basalResult">
+                <p>BMR Result: <span id="result"></span></p>
+            </div>
+        </div>
+        
+        
+    
+        <div id="container">
+            <div id="column1"></div>
+            <div id="column2"></div>
+            <div id="column3"></div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

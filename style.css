@@ -1,0 +1,76 @@
+* {
+    font-family: "Rubik", sans-serif;
+  }
+h1, #copy{
+    text-align: center;
+}
+#calculatorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+}
+#calculator{
+    width: 432px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: rgb(192, 143, 98);
+}
+#calculator label{
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+#basalResult{
+    width: 50%;
+}
+#container{
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#column1{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(193, 193, 193);
+}
+#column2{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(193, 193, 193);
+}
+#column3{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(193, 193, 193);
+}
+#container p{
+    margin: 0;
+}
+#column1 p:nth-child(2n), #column3 p:nth-child(2n){
+    background-color: gray;
+}
+#column2 p:nth-child(2n+1){
+    background-color: gray;
+}
+button{
+    background-color: rgb(255, 49, 49);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+}
+button:hover{
+    background-color: rgb(255, 90, 90);
+}
+button:active{
+    background-color: rgb(203, 0, 0);
+    border: 2px white solid;
+}
+label{
+    font-size: 12px;
+}
